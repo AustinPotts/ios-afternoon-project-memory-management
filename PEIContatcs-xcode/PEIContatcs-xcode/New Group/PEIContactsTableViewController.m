@@ -7,8 +7,13 @@
 //
 
 #import "PEIContactsTableViewController.h"
+#import "PEIContactController.h"
+#import "PEIContact.h"
+#import "PEIContactsDetailViewController.h"
 
 @interface PEIContactsTableViewController ()
+
+@property PEIContactController *contactController;
 
 @end
 
@@ -26,25 +31,28 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//
+//    return _contactController.contacts.count;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+     return _contactController.contacts.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ContactCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+     PEIContact *contact = self.contactController.contacts[indexPath.row];
+     cell.textLabel.text = contact.name;
+     cell.detailTextLabel.text = contact.number;
+     return cell;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -80,14 +88,21 @@
 }
 */
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"ShowContactSegue"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PEIContactsDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.controller = self.contactController;
+        detailVC.artist = self.contactController.contacts[indexPath.row];
+    }
+    
+    if ([segue.identifier isEqualToString:@"AddContactSegue"]) {
+        PEIContactsDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.controller = self.contactController;
+    }
+    
+    
 }
-*/
 
 @end

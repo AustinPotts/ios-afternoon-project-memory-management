@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class PEIContactController;
+@class PEIContact;
+
 @interface PEIContactsTableViewController : UITableViewController
+
+@property PEIContact *contact;
+@property (nonatomic)PEIContactController *controller;
 
 @end
 

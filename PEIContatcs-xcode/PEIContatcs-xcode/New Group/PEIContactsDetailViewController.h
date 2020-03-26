@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PEIContactsDetailViewController : UIViewController
+@class PEIContactController;
+@class PEIContact;
+
+@interface PEIContactsDetailViewController : UIViewController <UISearchBarDelegate>
+
+@property PEIContactController *controller;
+@property PEIContact *artist;
 
 @end
 
