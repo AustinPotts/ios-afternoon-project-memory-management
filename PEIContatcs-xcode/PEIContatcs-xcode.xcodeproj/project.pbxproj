@@ -15,6 +15,7 @@
 		45DAD444242C206A00A646DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD443242C206A00A646DE /* main.m */; };
 		45DAD44D242C2A2D00A646DE /* PEIContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD44C242C2A2D00A646DE /* PEIContactsTableViewController.m */; };
 		45DAD450242C2A5100A646DE /* PEIContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD44F242C2A5100A646DE /* PEIContactsDetailViewController.m */; };
+		45DAD454242C2C5700A646DE /* PEIContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD453242C2C5700A646DE /* PEIContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		45DAD44C242C2A2D00A646DE /* PEIContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIContactsTableViewController.m; sourceTree = "<group>"; };
 		45DAD44E242C2A5100A646DE /* PEIContactsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIContactsDetailViewController.h; sourceTree = "<group>"; };
 		45DAD44F242C2A5100A646DE /* PEIContactsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIContactsDetailViewController.m; sourceTree = "<group>"; };
+		45DAD452242C2C5700A646DE /* PEIContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIContact.h; sourceTree = "<group>"; };
+		45DAD453242C2C5700A646DE /* PEIContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		45DAD430242C206800A646DE /* PEIContatcs-xcode */ = {
 			isa = PBXGroup;
 			children = (
+				45DAD451242C2C2F00A646DE /* Model */,
 				45DAD44A242C29B100A646DE /* New Group */,
 				45DAD431242C206800A646DE /* AppDelegate.h */,
 				45DAD432242C206800A646DE /* AppDelegate.m */,
@@ -87,6 +91,15 @@
 				45DAD44F242C2A5100A646DE /* PEIContactsDetailViewController.m */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		45DAD451242C2C2F00A646DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45DAD452242C2C5700A646DE /* PEIContact.h */,
+				45DAD453242C2C5700A646DE /* PEIContact.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 				45DAD450242C2A5100A646DE /* PEIContactsDetailViewController.m in Sources */,
 				45DAD436242C206800A646DE /* SceneDelegate.m in Sources */,
 				45DAD44D242C2A2D00A646DE /* PEIContactsTableViewController.m in Sources */,
+				45DAD454242C2C5700A646DE /* PEIContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
