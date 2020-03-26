@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PEIContactsDetailViewController.h
 //  PEIContatcs-xcode
 //
 //  Created by Austin Potts on 3/25/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PEIContactsDetailViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

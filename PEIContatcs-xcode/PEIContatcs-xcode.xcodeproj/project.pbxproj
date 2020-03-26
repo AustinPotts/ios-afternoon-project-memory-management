@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		45DAD433242C206800A646DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD432242C206800A646DE /* AppDelegate.m */; };
 		45DAD436242C206800A646DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD435242C206800A646DE /* SceneDelegate.m */; };
-		45DAD439242C206800A646DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD438242C206800A646DE /* ViewController.m */; };
 		45DAD43C242C206800A646DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DAD43A242C206800A646DE /* Main.storyboard */; };
 		45DAD43E242C206A00A646DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DAD43D242C206A00A646DE /* Assets.xcassets */; };
 		45DAD441242C206A00A646DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DAD43F242C206A00A646DE /* LaunchScreen.storyboard */; };
 		45DAD444242C206A00A646DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD443242C206A00A646DE /* main.m */; };
+		45DAD44D242C2A2D00A646DE /* PEIContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD44C242C2A2D00A646DE /* PEIContactsTableViewController.m */; };
+		45DAD450242C2A5100A646DE /* PEIContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD44F242C2A5100A646DE /* PEIContactsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		45DAD432242C206800A646DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		45DAD434242C206800A646DE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		45DAD435242C206800A646DE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		45DAD437242C206800A646DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		45DAD438242C206800A646DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		45DAD43B242C206800A646DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45DAD43D242C206A00A646DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DAD440242C206A00A646DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45DAD442242C206A00A646DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DAD443242C206A00A646DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45DAD44B242C2A2D00A646DE /* PEIContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIContactsTableViewController.h; sourceTree = "<group>"; };
+		45DAD44C242C2A2D00A646DE /* PEIContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIContactsTableViewController.m; sourceTree = "<group>"; };
+		45DAD44E242C2A5100A646DE /* PEIContactsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIContactsDetailViewController.h; sourceTree = "<group>"; };
+		45DAD44F242C2A5100A646DE /* PEIContactsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIContactsDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +64,11 @@
 		45DAD430242C206800A646DE /* PEIContatcs-xcode */ = {
 			isa = PBXGroup;
 			children = (
+				45DAD44A242C29B100A646DE /* New Group */,
 				45DAD431242C206800A646DE /* AppDelegate.h */,
 				45DAD432242C206800A646DE /* AppDelegate.m */,
 				45DAD434242C206800A646DE /* SceneDelegate.h */,
 				45DAD435242C206800A646DE /* SceneDelegate.m */,
-				45DAD437242C206800A646DE /* ViewController.h */,
-				45DAD438242C206800A646DE /* ViewController.m */,
 				45DAD43A242C206800A646DE /* Main.storyboard */,
 				45DAD43D242C206A00A646DE /* Assets.xcassets */,
 				45DAD43F242C206A00A646DE /* LaunchScreen.storyboard */,
@@ -74,6 +76,17 @@
 				45DAD443242C206A00A646DE /* main.m */,
 			);
 			path = "PEIContatcs-xcode";
+			sourceTree = "<group>";
+		};
+		45DAD44A242C29B100A646DE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				45DAD44B242C2A2D00A646DE /* PEIContactsTableViewController.h */,
+				45DAD44C242C2A2D00A646DE /* PEIContactsTableViewController.m */,
+				45DAD44E242C2A5100A646DE /* PEIContactsDetailViewController.h */,
+				45DAD44F242C2A5100A646DE /* PEIContactsDetailViewController.m */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45DAD439242C206800A646DE /* ViewController.m in Sources */,
 				45DAD433242C206800A646DE /* AppDelegate.m in Sources */,
 				45DAD444242C206A00A646DE /* main.m in Sources */,
+				45DAD450242C2A5100A646DE /* PEIContactsDetailViewController.m in Sources */,
 				45DAD436242C206800A646DE /* SceneDelegate.m in Sources */,
+				45DAD44D242C2A2D00A646DE /* PEIContactsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
