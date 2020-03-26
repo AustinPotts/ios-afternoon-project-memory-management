@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSString *email;
-@property (nonatomic, readonly) int *number;
+@property (nonatomic, readonly) NSString *number;
 
 - (instancetype)initWithName:(NSString *)name
                        email:(NSString *)email
-                      number:(int *)number;
+                      number:(NSString *)number;
 
 @end
 
