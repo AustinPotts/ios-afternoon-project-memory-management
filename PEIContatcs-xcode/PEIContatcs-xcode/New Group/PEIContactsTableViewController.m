@@ -13,17 +13,27 @@
 
 @interface PEIContactsTableViewController ()
 
-@property PEIContactController *contactController;
+//@property (nonatomic) PEIContactController *contactController;
 
 @end
 
 @implementation PEIContactsTableViewController
+
+
+- (PEIContactController *)controller{
+    if (!_controller) {
+        _controller = [[PEIContactController alloc] init];
+    }
+    return _controller;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    
+    
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -38,14 +48,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-     return _contactController.contacts.count;
+     return [[self.controller contacts] count]; // Ask Paul if should be self.controller.contacts.count
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ContactCell" forIndexPath:indexPath];
     
-     PEIContact *contact = self.contactController.contacts[indexPath.row];
+     PEIContact *contact = self.controller.contacts[indexPath.row];
      cell.textLabel.text = contact.name;
      cell.detailTextLabel.text = contact.number;
      return cell;
@@ -93,13 +103,13 @@
     if ([segue.identifier isEqualToString:@"ShowContactSegue"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PEIContactsDetailViewController *detailVC = segue.destinationViewController;
-        detailVC.controller = self.contactController;
-        detailVC.artist = self.contactController.contacts[indexPath.row];
+        detailVC.controller = self.controller;
+        detailVC.artist = self.controller.contacts[indexPath.row];
     }
     
     if ([segue.identifier isEqualToString:@"AddContactSegue"]) {
         PEIContactsDetailViewController *detailVC = segue.destinationViewController;
-        detailVC.controller = self.contactController;
+        detailVC.controller = self.controller;
     }
     
     

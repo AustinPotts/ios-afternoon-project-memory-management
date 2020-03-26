@@ -50,7 +50,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="List of Contacts" id="XX9-t0-ifE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5m9-X4-k8S"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5m9-X4-k8S">
+                            <connections>
+                                <segue destination="n8w-xd-Vhl" kind="show" identifier="ShowContactSegue" id="bPo-NI-lIL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leZ-aV-bmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -170,4 +174,7 @@
             <point key="canvasLocation" x="313.04347826086956" y="108.48214285714285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bPo-NI-lIL"/>
+    </inferredMetricsTieBreakers>
 </document>

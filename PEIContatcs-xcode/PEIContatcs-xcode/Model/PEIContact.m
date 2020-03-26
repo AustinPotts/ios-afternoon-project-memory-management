@@ -11,8 +11,8 @@
 @implementation PEIContact
 
 - (instancetype)initWithName:(NSString *)name
- email:(NSString *)email
-                      number:(int *)number {
+                       email:(NSString *)email
+                      number:(NSString *)number {
     
     if (self = [super init]) {
         _name = name;
